@@ -9,9 +9,10 @@ namespace Quizz.Core.Models
 {
     public class Question : BaseEntity
     {
+        [Required(ErrorMessage = "Title required")]
         public string Title { get; set; }
-
-        public int Survey { get; set; }
-
+        public string Category { get; set; }
+        public List<Answer> Answer { get; set; }
     }
 }
+

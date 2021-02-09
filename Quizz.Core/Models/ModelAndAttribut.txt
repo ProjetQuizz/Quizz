@@ -1,0 +1,34 @@
+﻿Model et Attributs de la Class ANSWER : 
+0 - BaseEntity 
+1 - String AnswerText
+2 - String  Question
+3 - Bool  Value
+
+Model et Attributs de la Class Question :
+0 - BaseEntity 
+1 - String QuestionText
+2 -	String Category
+
+Model et Attributs de la Class QuestionCategory :
+0 - BaseEntity 
+1 -	String Category
+
+Model et Attributs de la Class User :
+0 - BaseEntity 
+1 - string FirstName
+2 - string LastName
+3 - String Email
+4 - String Phone
+5 - String Password
+6 - bool Admin
+
+A Déterminer lors de la mise en situation:
+Model et Attributs de la Class Quizz :
+Model et Attributs de la Class QuizzTest :
+
+
+
+
+
+
+

@@ -61,9 +61,54 @@
     <Compile Include="Migrations\202101211503192_modificationClassQuestion.designer.cs">
       <DependentUpon>202101211503192_modificationClassQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101270008579_fixModelAndAddQuestionControllerView.cs" />
+    <Compile Include="Migrations\202101270008579_fixModelAndAddQuestionControllerView.designer.cs">
+      <DependentUpon>202101270008579_fixModelAndAddQuestionControllerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101270058075_fixChangeModelAndView.cs" />
+    <Compile Include="Migrations\202101270058075_fixChangeModelAndView.designer.cs">
+      <DependentUpon>202101270058075_fixChangeModelAndView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101310155209_AddClassAnswerAndDbSet.cs" />
+    <Compile Include="Migrations\202101310155209_AddClassAnswerAndDbSet.designer.cs">
+      <DependentUpon>202101310155209_AddClassAnswerAndDbSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101311046000_ModifClassAnswerModel.cs" />
+    <Compile Include="Migrations\202101311046000_ModifClassAnswerModel.designer.cs">
+      <DependentUpon>202101311046000_ModifClassAnswerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101311220420_ModifClassAnswerAndFix.cs" />
+    <Compile Include="Migrations\202101311220420_ModifClassAnswerAndFix.designer.cs">
+      <DependentUpon>202101311220420_ModifClassAnswerAndFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102022307072_ModifClassQuestion.cs" />
+    <Compile Include="Migrations\202102022307072_ModifClassQuestion.designer.cs">
+      <DependentUpon>202102022307072_ModifClassQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102032159013_DeleteAnswerQuestion.cs" />
+    <Compile Include="Migrations\202102032159013_DeleteAnswerQuestion.designer.cs">
+      <DependentUpon>202102032159013_DeleteAnswerQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102032224525_AddAttributInQuestionListViewModel.cs" />
+    <Compile Include="Migrations\202102032224525_AddAttributInQuestionListViewModel.designer.cs">
+      <DependentUpon>202102032224525_AddAttributInQuestionListViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102032248128_ModifModelQuestion.cs" />
+    <Compile Include="Migrations\202102032248128_ModifModelQuestion.designer.cs">
+      <DependentUpon>202102032248128_ModifModelQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102051609121_ModifClassQuestion1.cs" />
+    <Compile Include="Migrations\202102051609121_ModifClassQuestion1.designer.cs">
+      <DependentUpon>202102051609121_ModifClassQuestion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102071132391_AddListQuestionRepository.cs" />
+    <Compile Include="Migrations\202102071132391_AddListQuestionRepository.designer.cs">
+      <DependentUpon>202102071132391_AddListQuestionRepository.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -81,6 +126,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101211503192_modificationClassQuestion.resx">
       <DependentUpon>202101211503192_modificationClassQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101270008579_fixModelAndAddQuestionControllerView.resx">
+      <DependentUpon>202101270008579_fixModelAndAddQuestionControllerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101270058075_fixChangeModelAndView.resx">
+      <DependentUpon>202101270058075_fixChangeModelAndView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101310155209_AddClassAnswerAndDbSet.resx">
+      <DependentUpon>202101310155209_AddClassAnswerAndDbSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101311046000_ModifClassAnswerModel.resx">
+      <DependentUpon>202101311046000_ModifClassAnswerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101311220420_ModifClassAnswerAndFix.resx">
+      <DependentUpon>202101311220420_ModifClassAnswerAndFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102022307072_ModifClassQuestion.resx">
+      <DependentUpon>202102022307072_ModifClassQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102032159013_DeleteAnswerQuestion.resx">
+      <DependentUpon>202102032159013_DeleteAnswerQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102032224525_AddAttributInQuestionListViewModel.resx">
+      <DependentUpon>202102032224525_AddAttributInQuestionListViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102032248128_ModifModelQuestion.resx">
+      <DependentUpon>202102032248128_ModifModelQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102051609121_ModifClassQuestion1.resx">
+      <DependentUpon>202102051609121_ModifClassQuestion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102071132391_AddListQuestionRepository.resx">
+      <DependentUpon>202102071132391_AddListQuestionRepository.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

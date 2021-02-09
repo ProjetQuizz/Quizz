@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Quizz.Core.Models
 {
-    public class Category : BaseEntity
+    public class QuestionCategory : BaseEntity
     {
-        public string Name { get; set; }
-
+        public string Category { get; set; }
     }
 }

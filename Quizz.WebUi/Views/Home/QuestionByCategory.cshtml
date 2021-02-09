@@ -1,0 +1,37 @@
+﻿@model Quizz.Core.ViewModels.QuestionListViewModel
+
+
+@{
+    ViewBag.Title = "QuestionByCategory";
+}
+
+
+<h1>QUESTIONS</h1>
+<div class="col-md-2">
+    <h4>Categories</h4>
+    <div class="list-group">
+        @Html.ActionLink("All", "QuestionByCategory", null, new { @class = Request["Category"] == null ? "list-group-item active" : "list-group-item" })
+        @foreach (var item in Model.QuestionCategories)
+        {
+            @Html.ActionLink(item.Category, "QuestionByCategory", new { Category = item.Category}, new { @class = Request["Category"] == item.Category ? "list-group-item active" : "list-group-item" })
+        }
+    </div>
+</div>
+
+<div class="col-md-10">
+    @foreach (var question in Model.Questions)
+        {
+         <div class="col-md-4" style="height: 200px;padding: 10px;margin: 10px;border: 2px grey solid;">
+             <div class="col-md-12">
+                 <p>@question.Id</p>
+                 <strong>@question.Title</strong>
+             </div>
+             <div class="col-md-12">
+                 <h4>@question.Category</h4>
+             </div>
+             <div>
+                 <p>@question.Answer</p>
+             </div>
+         </div>
+        }
+</div>

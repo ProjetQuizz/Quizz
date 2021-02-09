@@ -17,13 +17,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nom d'application", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("TechQUIZZ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
-                    <li>@Html.ActionLink("À propos de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("QuestionByCategory", "QuestionByCategory", "Home")</li>
+                    <li>@Html.ActionLink("CategoryForm", "Index", "QuestionCategory")</li>
+                    <li>@Html.ActionLink("QuestionForm", "Index", "QuestionManager")</li>
+                    <li>@Html.ActionLink("AnswerForm", "Index", "AnswerManager")</li>
+                    @*<li>@Html.ActionLink("TestAnswer", "Index", "Answers")</li>*@
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Créer un compte", "Create", "Utilisateur")</li>
+                    <li>@Html.ActionLink("Connexion", "Connect", "Login")</li>
                 </ul>
             </div>
         </div>
