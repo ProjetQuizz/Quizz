@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,11 @@ namespace Quizz.Core.Models
 {
     public class Question : BaseEntity
     {
+        [Required(ErrorMessage = "Title required")]
         public string Title { get; set; }
+        public string Category { get; set; }
 
-        public int Survey { get; set; }
 
     }
 }
+

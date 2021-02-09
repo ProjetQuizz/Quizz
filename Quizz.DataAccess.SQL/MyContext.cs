@@ -22,13 +22,9 @@ namespace Quizz.DataAccess.SQL
         // sur la configuration et l'utilisation du modèle Code First, consultez http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public DbSet<Answer> Answers { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Survey> Surveys { get; set; }
         public DbSet<Question> Questions { get; set; }
+        public DbSet<QuestionCategory> Categories { get; set; }
+        public DbSet<Survey> Surveys { get; set; }
         public DbSet<User> Users { get; set; }
-
-
-
-
     }
 }

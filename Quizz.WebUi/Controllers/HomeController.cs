@@ -1,14 +1,8 @@
-﻿using Quizz.Core.Logic;
-using Quizz.Core.Models;
-using Quizz.Core.ViewModels;
-using Quizz.DataAccess.SQL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-
 
 namespace Quizz.WebUi.Controllers
 {
@@ -85,14 +79,14 @@ namespace Quizz.WebUi.Controllers
                 viewModel.QuestionCategories = categories;
                 viewModel.Answers = answers;
 
-                return View(viewModel);
-            }
-          
-            public ActionResult Contact()
-            {
-                ViewBag.Message = "Your contact page.";
-
-                return View();
-            }
+            return View();
         }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+    }
 }
