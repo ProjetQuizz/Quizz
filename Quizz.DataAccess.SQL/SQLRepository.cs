@@ -14,6 +14,12 @@ namespace Quizz.DataAccess.SQL
         internal MyContext DataContext;
         internal DbSet<T> dbSet;
 
+        /*
+         * Nos besoins:
+         * - 
+         * 
+         */
+        
         public SQLRepository(MyContext dataContext)
         {
             this.DataContext = dataContext;
@@ -26,8 +32,8 @@ namespace Quizz.DataAccess.SQL
         }
 
         public List<Question> FindAll()
-        {
-            return DataContext.Questions.Include(em => em.Answer).ToList();
+        { 
+            return DataContext.Questions.AsNoTracking().ToList();
         }
        
 
@@ -62,7 +68,12 @@ namespace Quizz.DataAccess.SQL
             dbSet.Attach(t);
             DataContext.Entry(t).State = EntityState.Modified;
         }
+      
 
-    
+        public List<Answer> AllAnswersByQuestion(int questionId)
+        {
+            return DataContext.Answers.AsNoTracking().Where(r => r.QuestionId == questionId ).ToList();
+        }
+
     }
 }

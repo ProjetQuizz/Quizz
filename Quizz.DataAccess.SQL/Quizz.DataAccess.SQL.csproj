@@ -105,6 +105,10 @@
     <Compile Include="Migrations\202102071132391_AddListQuestionRepository.designer.cs">
       <DependentUpon>202102071132391_AddListQuestionRepository.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102091655229_ModifClassModelAnswerAndQuestion.cs" />
+    <Compile Include="Migrations\202102091655229_ModifClassModelAnswerAndQuestion.designer.cs">
+      <DependentUpon>202102091655229_ModifClassModelAnswerAndQuestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102071132391_AddListQuestionRepository.resx">
       <DependentUpon>202102071132391_AddListQuestionRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102091655229_ModifClassModelAnswerAndQuestion.resx">
+      <DependentUpon>202102091655229_ModifClassModelAnswerAndQuestion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
