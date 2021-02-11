@@ -12,7 +12,7 @@ namespace Quizz.Core.Logic
         List<Question> FindAll(); //je vais avoir besoin d'une liste de question et une liste de answer
                                   //list<T> FindAll(); (?)
 
-        List<Answer> FindAllAnswer(); //list de question => sans intérêt
+        //List<Answer> FindAllAnswer(); //list de question => sans intérêt
 
         List<Answer> AllAnswersByQuestion(int questionId);// lister les questions par rapport à une question
         void Delete(int id);

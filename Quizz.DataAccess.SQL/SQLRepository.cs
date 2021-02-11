@@ -11,12 +11,7 @@ namespace Quizz.DataAccess.SQL
         internal MyContext DataContext;
         internal DbSet<T> dbSet;
 
-        /*
-         * Nos besoins:
-         * - 
-         * 
-         */
-        
+               
         public SQLRepository(MyContext dataContext)
         {
             this.DataContext = dataContext;
