@@ -1,11 +1,8 @@
 ﻿using Quizz.Core.Logic;
 using Quizz.Core.Models;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Quizz.DataAccess.SQL
 {
@@ -36,7 +33,6 @@ namespace Quizz.DataAccess.SQL
             return DataContext.Questions.AsNoTracking().ToList();
         }
        
-
         public void Delete(int id)
         {
             T t = FindById(id);
