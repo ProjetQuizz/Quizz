@@ -1,4 +1,5 @@
-﻿@model Quizz.Core.ViewModels.QuestionListViewModel
+﻿
+@model Quizz.Core.ViewModels.QuestionListViewModel
 
 
 @{
@@ -29,9 +30,12 @@
              <div class="col-md-12">
                  <h4>@question.Category</h4>
              </div>
-             <div>
-                 <p>@question.Answer</p>
-             </div>
+             @foreach( var answer in Model.Answers)
+             {
+                 <ul>
+                     <li>@answer.QuestionId</li>
+                 </ul>
+             }
          </div>
         }
 </div>
